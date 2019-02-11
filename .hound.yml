@@ -1,0 +1,6 @@
+eslint:
+  enabled: true
+  config_file: .eslintrc
+  ignore_file: .eslintrcingnore
+scss:
+  enabled: false

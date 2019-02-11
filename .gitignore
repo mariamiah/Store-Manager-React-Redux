@@ -3,9 +3,7 @@
 .babelrc
 # testing
 /coverage
-
 # production
 /build
 package-lock.json
-.babelrc
 .vscode
