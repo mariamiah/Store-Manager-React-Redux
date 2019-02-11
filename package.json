@@ -1,0 +1,53 @@
+{
+  "name": "store-manager-react",
+  "version": "1.0.0",
+  "description": "Store Manager is a web application that helps store owners manage sales and product inventory records. This application is meant for use in a single store.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariamiah/Store-Manager-React.git"
+  },
+  "author": "mariah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariamiah/Store-Manager-React/issues"
+  },
+  "homepage": "https://github.com/mariamiah/Store-Manager-React#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.1.0",
+    "jest-module-name-mapper": "^0.1.2",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "jest": {
+    "verbose": true,
+    "moduleNameMapper":{
+        "^.+\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "snapshotSerializers": [
+        "enzyme-to-json/serializer"
+      ]
+}
+}
