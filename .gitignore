@@ -7,5 +7,4 @@
 # production
 /build
 package-lock.json
-.babelrc
 .vscode
