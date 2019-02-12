@@ -1,9 +1,8 @@
 .DS_Store
 /node_modules
-.babelrc
-# testing
 /coverage
 # production
 /build
 package-lock.json
 .vscode
+dist
