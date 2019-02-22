@@ -32,4 +32,9 @@ module.exports = {
   plugins: [
     new HtmlPlugin({ template: './src/index.html' }),
   ],
+  devServer: {
+    historyApiFallback: {
+      disableDotRule: true,
+    },
+  },
 };
