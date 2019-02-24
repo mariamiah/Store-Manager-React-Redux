@@ -1,4 +1,8 @@
 ### StoreManager-FrontEnd-React
+[![Build Status](https://travis-ci.org/mariamiah/Store-Manager-React.svg?branch=develop)](https://travis-ci.org/mariamiah/Store-Manager-React)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a7c7405806603d145995/maintainability)](https://codeclimate.com/github/mariamiah/Store-Manager-React/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a7c7405806603d145995/test_coverage)](https://codeclimate.com/github/mariamiah/Store-Manager-React/test_coverage)
+
 Store Manager is a web application that helps store owners manage sales and product inventory records. This application is meant for use in a single store.
 
 ### Features
