@@ -39,6 +39,7 @@
     "jest-module-name-mapper": "^0.1.2",
     "node-sass": "^4.11.0",
     "prettier": "^1.16.4",
+    "react-router-dom": "^4.3.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.3",
@@ -47,8 +48,7 @@
   },
   "dependencies": {
     "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "react-router-dom": "^4.3.1"
+    "react-dom": "^16.8.1"
   },
   "jest": {
     "verbose": true,
