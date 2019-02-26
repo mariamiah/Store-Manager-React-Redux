@@ -4,10 +4,12 @@
   "description": "Store Manager is a web application that helps store owners manage sales and product inventory records. This application is meant for use in a single store.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development --hot",
+    "build": "webpack --mode production  --open --hot",
     "test": "jest",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "heroku-prebuild": "npm install yarn && yarn install",
+    "heroku-postbuild": "yarn run build"
   },
   "repository": {
     "type": "git",
@@ -42,13 +44,14 @@
     "react-router-dom": "^4.3.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.29.3",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
     "react": "^16.8.1",
-    "react-dom": "^16.8.1"
+    "react-dom": "^16.8.1",
+    "serve": "^10.1.2"
   },
   "jest": {
     "verbose": true,
