@@ -1,0 +1,10 @@
+{
+    "name": "Store-Manager-React",
+    "description": "Store manager project in React",
+    "scripts": {},
+    "env": {},
+    "formation": {},
+    "addons": [],
+    "buildpacks": [],
+    "stack": "heroku-18"
+  }
