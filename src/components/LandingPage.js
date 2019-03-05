@@ -2,10 +2,12 @@
 /* eslint-disable jsx-a11y/no-autofocus */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class LandingPage extends Component {
   render() {
+    const { onSubmit, onChange } = this.props;
     return (
       <div className="container">
         <div className="row">
@@ -14,14 +16,14 @@ export default class LandingPage extends Component {
               <div className="card-body">
                 <h5 className="card-title text-center"><strong>STORE MANAGER</strong></h5>
                 <h5 className="card-title text-center">Sign In</h5>
-                <form className="form-signin">
+                <form className="form-signin" onSubmit={onSubmit}>
                   <div className="form-label-group">
-                    <input type="email" id="inputEmail" className="form-control" placeholder="Email address" required autoFocus />
-                    <label htmlFor="inputEmail">Email address</label>
+                    <input type="text" id="inputText" className="form-control" placeholder="Username" required autoFocus name="username" onChange={onChange} />
+                    <label htmlFor="inputText">Username</label>
                   </div>
 
                   <div className="form-label-group">
-                    <input type="password" id="inputPassword" className="form-control" placeholder="Password" required />
+                    <input type="password" id="inputPassword" className="form-control" placeholder="Password" required name="password" onChange={onChange} />
                     <label htmlFor="inputPassword">Password</label>
                   </div>
 
@@ -50,3 +52,7 @@ Sign in with Facebook
     );
   }
 }
+LandingPage.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
