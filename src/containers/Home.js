@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
@@ -6,8 +7,10 @@ import PropTypes from 'prop-types';
 import { ToastContainer, toast } from 'react-toastify';
 import LandingPage from '../components/LandingPage';
 import LoginAction from '../actions/LoginAction';
+
+const jwt = require('jsonwebtoken');
 // eslint-disable-next-line react/prefer-stateless-function
-class Home extends Component {
+export class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -48,7 +51,13 @@ class Home extends Component {
           Login Successful
         </p>,
       );
-      setTimeout(() => window.location.assign('/dashboard'), 2000);
+      const { token } = loginState.user;
+      const decoded = jwt.decode(token);
+      if (decoded.roles[0] === 'Admin') {
+        setTimeout(() => window.location.assign('/admindashboard'), 2000);
+      } else {
+        setTimeout(() => window.location.assign('/attendantdashboard'), 2000);
+      }
     }
   }
 
@@ -72,7 +81,7 @@ class Home extends Component {
   }
 }
 Home.propTypes = {
-  LoginAction: PropTypes.func.isRequired,
+  LoginAction: PropTypes.func,
 };
 
 const mapStateToProps = state => ({

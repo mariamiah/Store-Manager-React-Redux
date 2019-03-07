@@ -1,7 +1,7 @@
 import * as actions from './ActionTypes';
 
-
-const LoginAction = payload => dispatch => fetch('https://storemanager15.herokuapp.com/api/v2/auth/login', {
+const { BASE_URL } = process.env;
+const LoginAction = payload => dispatch => fetch(`${BASE_URL}/api/v2/auth/login`, {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
