@@ -23,6 +23,4 @@ Store Manager is a web application that helps store owners manage sales and prod
 
 ### View the store manager application on heroku
 - [Store Manager React](https://storemanager13react.herokuapp.com/)
-### Use the following credentials for your first login:
-- Username: `Admin`
-- Password: `Administrator`
+
