@@ -3,8 +3,11 @@
     --input-padding-y: .75rem;
   }
   
-  body {
+  /* body {
     background-image: url('/src/assets/img/background.jpg');
+  } */
+  body{
+    background-image: url('/src/assets/img/imagesfinal.jpeg')
   }
   .card-signin {
     border: 0;
@@ -109,3 +112,27 @@
     color: white;
     background-color: #3b5998;
   }
+ 
+
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+ .navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.img-responsive{
+  width: 100%;
+}
+#topNav{
+  background-color:black;
+}
+footer {
+  padding: 25px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: center;
+}
