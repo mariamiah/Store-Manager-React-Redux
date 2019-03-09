@@ -45,6 +45,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "semantic-ui-react": "^0.85.0",
+    "sinon": "^7.2.7",
     "yarn": "^1.13.0"
   },
   "devDependencies": {

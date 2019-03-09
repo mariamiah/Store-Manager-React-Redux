@@ -136,3 +136,15 @@ footer {
   color: white;
   text-align: center;
 }
+#btndelete{
+  float: right;
+}
+#pdtbody{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card{
+  display:inline-block!important;
+}
+#signin{
+  width:100%;
+}
