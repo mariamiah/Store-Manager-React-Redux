@@ -7,7 +7,7 @@
     background-image: url('/src/assets/img/background.jpg');
   } */
   body{
-    background-image: url('/src/assets/img/imagesfinal.jpeg')
+    background-color: #102B36;
   }
   .card-signin {
     border: 0;
@@ -147,4 +147,35 @@ footer {
 }
 #signin{
   width:100%;
+}
+
+*[role="form"] {
+ max-width: 530px;
+ padding: 15px;
+ margin: 0 auto;
+ border-radius: 0.3em;
+ background-color:white;
+}
+
+*[role="form"] h2 { 
+ font-family: 'Open Sans' , sans-serif;
+ font-size: 40px;
+ font-weight: 600;
+ color: #000000;
+ margin-top: 5%;
+ text-align: center;
+ text-transform: uppercase;
+ letter-spacing: 4px;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#attendant{
+  background-color:white;
+}
+.middle h1{
+  text-align: center;
+  color:green;
 }

@@ -8,7 +8,19 @@ describe('reducers state', () => {
   it('returns default state', () => {
     let state;
     state = reducers(undefined, {});
-    expect(state).toEqual({ LoginReducer: { username: '', password: '' }, FetchProductsReducer: { Products: [] } });
+    expect(state).toEqual({
+      LoginReducer: { username: '', password: '' },
+      FetchProductsReducer: { Products: [] },
+      RegisterEmployeesReducer: {
+        confirm_password: '',
+        email: '',
+        employee_name: '',
+        gender: '',
+        password: '',
+        role: '',
+        username: '',
+      },
+    });
   });
   it('should handle FETCH_PRODUCT_SUCCESS', () => {
     const action = {
