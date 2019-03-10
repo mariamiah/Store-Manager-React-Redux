@@ -2,7 +2,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { AdminLandingView } from '../AdminLandingView';
-import AdminLanding from '../../components/AdminLanding';
 
 describe('<AdminLandingView />', () => {
   it('should render without crashing', () => {

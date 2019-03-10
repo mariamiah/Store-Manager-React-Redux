@@ -15,3 +15,11 @@ export const fetchProductsFailActionCreator = error => ({
   type: 'FETCH_PRODUCT_FAIL',
   error,
 });
+export const registerEmployeeActionCreator = payload => ({
+  type: 'REGISTER_EMPLOYEE_SUCCESS',
+  payload,
+});
+export const registerEmployeeFailActionCreator = error => ({
+  type: 'REGISTER_EMPLOYEE_FAIL',
+  error,
+});

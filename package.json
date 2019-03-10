@@ -39,6 +39,7 @@
     "react-google-login": "^5.0.2",
     "react-redux": "^6.0.1",
     "react-responsive-modal": "^3.6.0",
+    "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-toastify": "^4.5.2",
     "redux": "^4.0.1",

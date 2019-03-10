@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 export default function Header() {
@@ -18,13 +19,16 @@ Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/admindashboard/products">Products</a>
+              <a className="nav-link" href="#">Products</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/admindashboard/categories">Categories</a>
+              <a className="nav-link" href="#">Categories</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/admindashboard/employees">Employees</a>
+              <a className="nav-link" href="/employees">Employees</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/">Logout</a>
             </li>
           </ul>
           <form className="form-inline my-2 my-lg-0">
