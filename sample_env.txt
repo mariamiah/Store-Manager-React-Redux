@@ -1,1 +1,1 @@
-BASE_URL = 'Base URL for the hosted application'
+BASE_URL = 'Base URL for the backend application'
