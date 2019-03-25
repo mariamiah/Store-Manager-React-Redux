@@ -1,13 +1,17 @@
+/* eslint-disable react/prefer-stateless-function */
 /* eslint-disable jsx-a11y/label-has-for */
 /* eslint-disable jsx-a11y/no-autofocus */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { Component } from 'react';
+import Loader from 'react-loaders';
 import PropTypes from 'prop-types';
 
 // eslint-disable-next-line react/prefer-stateless-function
+
 export default class LandingPage extends Component {
   render() {
     const { onSubmit, onChange } = this.props;
+    const loader = <Loader type="ball-spin-fade-loader" />;
     return (
       <div className="container">
         <div className="row">

@@ -19,3 +19,11 @@ h1{
     color: $color-alert;
 }
 
+$primary-color: $my-brand-color;
+@import 'loaders.css/src/animations/ball-spin-fade-loader.scss'
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}

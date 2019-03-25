@@ -10,11 +10,12 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": " jest --collectCoverage",
-    "start": "webpack-dev-server --open --mode development --hot ",
+    "dev": "webpack-dev-server --open --mode development --hot ",
     "build": "webpack --mode production --open --hot",
     "heroku-postbuild": "npm run build",
     "lint": "eslint  . --ignore-path .gitignore",
-    "lint:fix": "eslint . --fix --ignore-path .gitignore"
+    "lint:fix": "eslint . --fix --ignore-path .gitignore",
+    "start": "node server.js" 
   },
   "dependencies": {
     "@babel/cli": "^7.2.3",
@@ -32,11 +33,13 @@
     "image-webpack-loader": "^4.6.0",
     "jest-fetch-mock": "^2.1.1",
     "jsonwebtoken": "^8.5.0",
+    "loaders.css": "^0.1.2",
     "prop-types": "^15.7.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-facebook-login": "^4.1.1",
     "react-google-login": "^5.0.2",
+    "react-loaders": "^3.0.1",
     "react-redux": "^6.0.1",
     "react-responsive-modal": "^3.6.0",
     "react-router": "^4.3.1",
