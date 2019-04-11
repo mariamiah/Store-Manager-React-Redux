@@ -13,8 +13,7 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
-  - npm test -- -u
-  - npm test -- --coverage # Include coverage when running tests
+  - npm test -- -u --coverage # Include coverage when running tests
   - npm run build
 after_script: # Upload coverage reports 
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
