@@ -3,8 +3,7 @@ pipeline {
     
   tools {nodejs "nodejs"}
     
-  stages {
-        
+  stages {      
     stage('Checkout the git repository') {
       steps {
         git branch: 'develop',  url: 'https://github.com/mariamiah/Store-Manager-React.git'
