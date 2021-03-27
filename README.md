@@ -3,7 +3,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a7c7405806603d145995/maintainability)](https://codeclimate.com/github/mariamiah/Store-Manager-React/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a7c7405806603d145995/test_coverage)](https://codeclimate.com/github/mariamiah/Store-Manager-React/test_coverage)
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
-[![CircleCI](https://circleci.com/gh/mariamiah/Store-Manager-React.svg?style=svg)](https://circleci.com/gh/mariamiah/Store-Manager-React)
 
 Store Manager is a web application that helps store owners manage sales and product inventory records. This application is meant for use in a single store.
 
