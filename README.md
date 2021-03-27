@@ -27,4 +27,4 @@ Store Manager is a web application that helps store owners manage sales and prod
 - To run tests `yarn test`
 
 ### Deployment
-[App deployment here]('https://storemanagerapp.herokuapp.com/')
+[App deployment here](https://storemanagerapp.herokuapp.com/)
