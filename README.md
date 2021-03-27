@@ -22,6 +22,6 @@ Store Manager is a web application that helps store owners manage sales and prod
 - [ArgonCss](https://demos.creative-tim.com/argon-design-system/docs/getting-started/quick-start.html)
 - [Redux](https://redux.js.org/)
 
-
-
-
+### Getting Started
+- Install dependencies using yarn install
+- Run locally using `yarn dev`

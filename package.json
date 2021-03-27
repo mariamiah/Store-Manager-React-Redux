@@ -4,7 +4,7 @@
   "description": "Store Manager is a web application that helps store owners manage sales and product inventory records. This application is meant for use in a single store.",
   "main": "index.js",
   "engines": {
-    "node": "10.15.1"
+    "node": "12.20.0"
   },
   "scripts": {
     "test": "jest",
