@@ -181,3 +181,7 @@ body, html {
   color:green;
   padding: 1px 1px 2rem 6rem;
 }
+.signin-btn {
+  display: flex;
+  justify-content: center;
+}

@@ -3,15 +3,14 @@
 /* eslint-disable jsx-a11y/no-autofocus */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { Component } from 'react';
-import Loader from 'react-loaders';
 import PropTypes from 'prop-types';
+import { LoadingSpinner } from './Loader';
 
 // eslint-disable-next-line react/prefer-stateless-function
 
 export default class LandingPage extends Component {
   render() {
-    const { onSubmit, onChange } = this.props;
-    const loader = <Loader type="ball-spin-fade-loader" />;
+    const { onSubmit, onChange, loading } = this.props;
     return (
       <div className="container">
         <div className="row">
@@ -35,7 +34,8 @@ export default class LandingPage extends Component {
                     <input type="checkbox" className="custom-control-input" id="customCheck1" />
                     <label className="custom-control-label" htmlFor="customCheck1">Remember password</label>
                   </div>
-                  <button className="btn btn-lg btn-success btn-block text-uppercase" type="submit">Sign in</button>
+                  <button className="btn btn-lg btn-success btn-block text-uppercase signin-btn" type="submit">login<span>{loading ? <LoadingSpinner />: null}</span>
+                  </button>
                 </form>
               </div>
             </div>
