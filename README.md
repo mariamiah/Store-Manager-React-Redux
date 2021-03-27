@@ -1,5 +1,5 @@
 ### StoreManager-FrontEnd-React
-[![Build Status](https://travis-ci.org/mariamiah/Store-Manager-React.svg?branch=develop)](https://travis-ci.org/mariamiah/Store-Manager-React)
+[![Build Status](https://travis-ci.org/mariamiah/Store-Manager-React-Redux.svg?branch=develop)](https://travis-ci.org/mariamiah/Store-Manager-React-Redux)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a7c7405806603d145995/maintainability)](https://codeclimate.com/github/mariamiah/Store-Manager-React/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a7c7405806603d145995/test_coverage)](https://codeclimate.com/github/mariamiah/Store-Manager-React/test_coverage)
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
@@ -25,3 +25,7 @@ Store Manager is a web application that helps store owners manage sales and prod
 ### Getting Started
 - Install dependencies using yarn install
 - Run locally using `yarn dev`
+- To run tests `yarn test`
+
+### Deployment
+[App deployment here]('https://storemanagerapp.herokuapp.com/')

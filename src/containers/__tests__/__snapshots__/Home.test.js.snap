@@ -17,6 +17,7 @@ Home {
   "refs": Object {},
   "setState": [Function],
   "state": Object {
+    "loading": false,
     "mia": undefined,
     "password": "",
     "username": "",
@@ -31,13 +32,16 @@ Home {
         "useCallback": [Function],
         "useContext": [Function],
         "useDebugValue": [Function],
+        "useDeferredValue": [Function],
         "useEffect": [Function],
         "useImperativeHandle": [Function],
         "useLayoutEffect": [Function],
         "useMemo": [Function],
         "useReducer": [Function],
         "useRef": [Function],
+        "useResponder": [Function],
         "useState": [Function],
+        "useTransition": [Function],
       },
       "_element": <Home
         LoginAction={[MockFunction]}
@@ -58,6 +62,7 @@ Home {
       "_renderPhaseUpdates": null,
       "_rendered": <div>
         <LandingPage
+          loading={false}
           onChange={[Function]}
           onSubmit={[Function]}
         />
@@ -128,6 +133,7 @@ Home {
   "refs": Object {},
   "setState": [Function],
   "state": Object {
+    "loading": true,
     "password": "",
     "username": "",
   },
@@ -141,13 +147,16 @@ Home {
         "useCallback": [Function],
         "useContext": [Function],
         "useDebugValue": [Function],
+        "useDeferredValue": [Function],
         "useEffect": [Function],
         "useImperativeHandle": [Function],
         "useLayoutEffect": [Function],
         "useMemo": [Function],
         "useReducer": [Function],
         "useRef": [Function],
+        "useResponder": [Function],
         "useState": [Function],
+        "useTransition": [Function],
       },
       "_element": <Home
         LoginAction={
@@ -185,6 +194,7 @@ Home {
       "_renderPhaseUpdates": null,
       "_rendered": <div>
         <LandingPage
+          loading={true}
           onChange={[Function]}
           onSubmit={[Function]}
         />
@@ -238,6 +248,7 @@ Home {
   "refs": Object {},
   "setState": [Function],
   "state": Object {
+    "loading": undefined,
     "password": "",
     "username": "",
   },
@@ -251,13 +262,16 @@ Home {
         "useCallback": [Function],
         "useContext": [Function],
         "useDebugValue": [Function],
+        "useDeferredValue": [Function],
         "useEffect": [Function],
         "useImperativeHandle": [Function],
         "useLayoutEffect": [Function],
         "useMemo": [Function],
         "useReducer": [Function],
         "useRef": [Function],
+        "useResponder": [Function],
         "useState": [Function],
+        "useTransition": [Function],
       },
       "_element": <Home
         LoginAction={[MockFunction]}
@@ -331,6 +345,7 @@ Home {
   "refs": Object {},
   "setState": [Function],
   "state": Object {
+    "loading": undefined,
     "password": "",
     "username": "",
   },
@@ -344,13 +359,16 @@ Home {
         "useCallback": [Function],
         "useContext": [Function],
         "useDebugValue": [Function],
+        "useDeferredValue": [Function],
         "useEffect": [Function],
         "useImperativeHandle": [Function],
         "useLayoutEffect": [Function],
         "useMemo": [Function],
         "useReducer": [Function],
         "useRef": [Function],
+        "useResponder": [Function],
         "useState": [Function],
+        "useTransition": [Function],
       },
       "_element": <Home
         LoginAction={[MockFunction]}

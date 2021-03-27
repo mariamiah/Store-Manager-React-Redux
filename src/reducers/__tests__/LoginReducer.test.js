@@ -14,6 +14,7 @@ describe('Login Reducer', () => {
     };
     expect(LoginReducer(initialState, action)).toEqual({
       user: 'payload',
+      loading: false
     });
   });
   it('should handle LOGIN_FAIL', () => {
@@ -23,6 +24,7 @@ describe('Login Reducer', () => {
     };
     expect(LoginReducer(initialState, action)).toEqual({
       error: 'error',
+      loading: false
     });
   });
 });
