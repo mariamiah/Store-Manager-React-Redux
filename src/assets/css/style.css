@@ -176,3 +176,8 @@ body, html {
   text-align: center;
   color:green;
 }
+
+.card-subtitle {
+  color:green;
+  padding: 1px 1px 2rem 6rem;
+}

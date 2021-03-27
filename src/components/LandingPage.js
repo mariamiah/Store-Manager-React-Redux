@@ -19,7 +19,7 @@ export default class LandingPage extends Component {
             <div className="card card-signin my-5" id="signin">
               <div className="card-body">
                 <h5 className="card-title text-center"><strong>STORE MANAGER</strong></h5>
-                <h5 className="card-title text-center">Sign In</h5>
+                <p className="card-subtitle">Manage your Inventory</p>
                 <form className="form-signin" onSubmit={onSubmit}>
                   <div className="form-label-group">
                     <input type="text" id="inputText" className="form-control" placeholder="Username" required autoFocus name="username" onChange={onChange} />

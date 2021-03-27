@@ -20,10 +20,10 @@ h1{
 }
 
 $primary-color: $my-brand-color;
-@import 'loaders.css/src/animations/ball-spin-fade-loader.scss'
 .loader-hidden {
   display: none;
 }
 .loader-active {
   display: block;
 }
+@import 'loaders.css/src/animations/ball-spin-fade-loader.scss'
