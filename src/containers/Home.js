@@ -16,6 +16,7 @@ export class Home extends Component {
     this.state = {
       username: '',
       password: '',
+      loading: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -41,10 +42,16 @@ export class Home extends Component {
   handleSubmit(e) {
     e.preventDefault();
     // eslint-disable-next-line react/destructuring-assignment
-    this.props.LoginAction(this.state);
+    this.props.LoginAction({username: this.state.username, password: this.state.password});
+    this.setState({
+      loading: true
+    })
   }
 
   handleSuccess(loginState) {
+    this.setState({
+      loading: loginState.loading
+    })
     if (loginState.user.token) {
       toast.success(
         <p className="text-white">
@@ -62,11 +69,14 @@ export class Home extends Component {
   }
 
   handleErrors(props) {
+    this.setState({
+      loading: props.loginState.loading
+    })
     if (props.loginState.error) {
       toast.error(
         <p>
-          {props.loginState.error.message}
-        </p>,
+          Incorrect username or password.
+        </p>
       );
     }
   }
@@ -74,7 +84,7 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <LandingPage onChange={this.handleChange} onSubmit={this.handleSubmit} />
+        <LandingPage onChange={this.handleChange} onSubmit={this.handleSubmit} loading={this.state.loading} />
         <ToastContainer />
       </div>
     );
