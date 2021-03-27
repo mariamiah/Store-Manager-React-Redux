@@ -36,7 +36,6 @@ export default class LandingPage extends Component {
                     <label className="custom-control-label" htmlFor="customCheck1">Remember password</label>
                   </div>
                   <button className="btn btn-lg btn-success btn-block text-uppercase" type="submit">Sign in</button>
-
                 </form>
               </div>
             </div>
