@@ -18,7 +18,6 @@ export default class LandingPage extends Component {
             <div className="card card-signin my-5" id="signin">
               <div className="card-body">
                 <h5 className="card-title text-center"><strong>STORE MANAGER</strong></h5>
-                <p className="card-subtitle">Manage your Inventory</p>
                 <form className="form-signin" onSubmit={onSubmit}>
                   <div className="form-label-group">
                     <input type="text" id="inputText" className="form-control" placeholder="Username" required autoFocus name="username" onChange={onChange} />
@@ -28,11 +27,6 @@ export default class LandingPage extends Component {
                   <div className="form-label-group">
                     <input type="password" id="inputPassword" className="form-control" placeholder="Password" required name="password" onChange={onChange} />
                     <label htmlFor="inputPassword">Password</label>
-                  </div>
-
-                  <div className="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                    <label className="custom-control-label" htmlFor="customCheck1">Remember password</label>
                   </div>
                   <button className="btn btn-lg btn-success btn-block text-uppercase signin-btn" type="submit">login<span>{loading ? <LoadingSpinner />: null}</span>
                   </button>
