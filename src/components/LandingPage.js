@@ -15,7 +15,6 @@ const LandingPage = ({onSubmit, onChange, loading}) => {
                     <input type="text" id="inputText" className="form-control" placeholder="Username" required autoFocus name="username" onChange={onChange} />
                     <label htmlFor="inputText">Username</label>
                   </div>
-
                   <div className="form-label-group">
                     <input type="password" id="inputPassword" className="form-control" placeholder="Password" required name="password" onChange={onChange} />
                     <label htmlFor="inputPassword">Password</label>
