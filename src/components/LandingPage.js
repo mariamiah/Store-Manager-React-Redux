@@ -1,16 +1,8 @@
-/* eslint-disable react/prefer-stateless-function */
-/* eslint-disable jsx-a11y/label-has-for */
-/* eslint-disable jsx-a11y/no-autofocus */
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { LoadingSpinner } from './Loader';
 
-// eslint-disable-next-line react/prefer-stateless-function
-
-export default class LandingPage extends Component {
-  render() {
-    const { onSubmit, onChange, loading } = this.props;
+const LandingPage = ({onSubmit, onChange, loading}) => {
     return (
       <div className="container">
         <div className="row">
@@ -37,9 +29,9 @@ export default class LandingPage extends Component {
         </div>
       </div>
     );
-  }
 }
 LandingPage.propTypes = {
   onSubmit: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
 };
+export default LandingPage;

@@ -5,8 +5,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import AdminLanding from '../components/AdminLanding';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import FetchProductsAction from '../actions/FetchProductsAction';
 
 export class AdminLandingView extends Component {
@@ -18,9 +16,8 @@ export class AdminLandingView extends Component {
     if (this.props.product === []) return null;
     return (
       <div>
-        <Header />
-        {this.props.product.map(item => <AdminLanding item={item} key={item.product_id} />)}
-        <Footer />
+        <AdminLanding />
+
       </div>
     );
   }
