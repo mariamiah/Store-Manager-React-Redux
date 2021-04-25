@@ -13,6 +13,7 @@ const LoginAction = payload => dispatch => fetch(`${BASE_URL}/api/v2/auth/login`
 })
   .then(response => response.json())
   .then((json) => {
+    console.log(json)
     if ('token' in json) {
       localStorage.setItem('token', json.token);
       dispatch(actions.loginSuccessActionCreator(json));
