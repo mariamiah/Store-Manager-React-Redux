@@ -1,6 +1,10 @@
-global.fetch = require('jest-fetch-mock');
-const Enzyme = require('enzyme');
-const EnzymeAdapter = require('enzyme-adapter-react-16');
 
-// Setup enzyme's react adapter
-Enzyme.configure({ adapter: new EnzymeAdapter() });
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import '@testing-library/jest-dom/extend-expect';
+
+configure({ adapter: new Adapter() });
+global.fetch = require('jest-fetch-mock');
+global.crypto = require('crypto');
+
+global.crypto.subtle = {};
