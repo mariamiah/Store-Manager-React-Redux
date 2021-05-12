@@ -6,7 +6,7 @@ import './login.css';
 const Login = ({ onSubmit, onChange, loading }) => (
   <form className="login" onSubmit={onSubmit} data-testid="login-form">
     <h5 className="store-title">STORE MANAGER</h5>
-    <input type="text" placeholder="Username" name="username" onChange={onChange} required />
+    <input type="text" id="username" placeholder="Username" name="username" onChange={onChange} required />
     <input type="password" placeholder="Password" name="password" onChange={onChange} required />
     <button type="submit">
       {loading ? 'Login...' : 'Login'}

@@ -11,7 +11,6 @@ const FetchProductsAction = () => dispatch => fetch(`${BASE_URL}/api/v2/products
   .then(response => response.json())
   .then((json) => {
     if (json.Products) {
-      console.log(json.Products)
       dispatch(actions.fetchProductsActionCreator(json.Products));
     } else {
       dispatch(actions.fetchProductsFailActionCreator(json));
