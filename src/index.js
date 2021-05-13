@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import 'react-toastify/dist/ReactToastify.css';
 import store from './Store';
-import Routes from './routes/index';
-import './assets/css/style.css';
+import App from './App';
 
 
 ReactDOM.render(
   <Provider store={store}>
-    <Routes />
+    <App />
   </Provider>, document.getElementById('root'),
 );

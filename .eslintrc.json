@@ -2,7 +2,8 @@
     "parser": "babel-eslint",
     "env": {
         "browser": true,
-        "node": true
+        "node": true,
+        "jest": true
     },
     "extends": "airbnb",
     "plugins": [
@@ -15,7 +16,13 @@
       "ecmaVersion": 6
     },
     "rules": {
-        "react/jsx-filename-extension": "off"
+        "react/jsx-filename-extension": "off",
+        "jsx-a11y/label-has-associated-control": [ 2, {
+          "labelComponents": ["CustomInputLabel"],
+          "labelAttributes": ["label"],
+          "controlComponents": ["CustomInput"],
+          "depth": 3
+        }]
       }
    
 }
